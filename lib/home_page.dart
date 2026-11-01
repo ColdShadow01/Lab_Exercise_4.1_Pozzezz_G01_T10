@@ -13,16 +13,15 @@ class MyHomePage extends StatelessWidget {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         centerTitle: true,
         title: Text(
-            title,
-            style: GoogleFonts.lobster(
-              textStyle: const TextStyle(
-                color: Colors.white,
-                fontSize: 32,
-                letterSpacing: 2.0,
-              ),
+          title,
+          style: GoogleFonts.lobster(
+            textStyle: const TextStyle(
+              color: Colors.white,
+              fontSize: 32,
+              letterSpacing: 2.0,
             ),
+          ),
         ),
-
       ),
       body: SingleChildScrollView(
         child: Center(
@@ -42,38 +41,56 @@ class MyHomePage extends StatelessWidget {
                 'https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400',
                 height: 250,
                 fit: BoxFit.cover,
-                errorBuilder: (context, error, stackTrace) =>
-                    const Icon(Icons.local_pizza, size: 100, color: Colors.orange),
+                errorBuilder: (context, error, stackTrace) => const Icon(
+                  Icons.local_pizza,
+                  size: 100,
+                  color: Colors.orange,
+                ),
               ),
               const SizedBox(height: 40),
 
               OutlinedButton(
                 onPressed: () => Navigator.pushNamed(context, '/menu'),
-                style: OutlinedButton.styleFrom(minimumSize: const Size(200, 50)),
+                style: OutlinedButton.styleFrom(
+                  minimumSize: const Size(200, 50),
+                ),
                 child: const Text('View Menu', style: TextStyle(fontSize: 18)),
               ),
               const SizedBox(height: 15),
 
               OutlinedButton(
                 onPressed: () => Navigator.pushNamed(context, '/about'),
-                style: OutlinedButton.styleFrom(minimumSize: const Size(200, 50)),
+                style: OutlinedButton.styleFrom(
+                  minimumSize: const Size(200, 50),
+                ),
                 child: const Text('About Us', style: TextStyle(fontSize: 18)),
               ),
               const SizedBox(height: 15),
               OutlinedButton(
                 onPressed: () => Navigator.pushNamed(context, '/contact'),
-                style: OutlinedButton.styleFrom(minimumSize: const Size(200, 50)),
-                child: const Text('Contact Info', style: TextStyle(fontSize: 18)),
+                style: OutlinedButton.styleFrom(
+                  minimumSize: const Size(200, 50),
+                ),
+                child: const Text(
+                  'Contact Info',
+                  style: TextStyle(fontSize: 18),
+                ),
               ),
               const SizedBox(height: 40),
 
               const Text('Follow us:'),
               const SizedBox(height: 10),
-              Row (
+              Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   IconButton(
-                    icon: const Text('𝕏', style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold)),
+                    icon: const Text(
+                      '𝕏',
+                      style: TextStyle(
+                        fontSize: 28,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                     onPressed: () => Navigator.pushNamed(context, '/twitter'),
                   ),
                   const SizedBox(width: 20),
@@ -86,7 +103,6 @@ class MyHomePage extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 40),
-
             ],
           ),
         ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+
 import 'home_page.dart';
 
 void main() {
@@ -41,7 +42,8 @@ class PlaceholderPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text(title)),
       body: Center(
-        child: Text('$title\n(to be implemented by assigned team member)',
+        child: Text(
+          '$title\n(to be implemented by assigned team member)',
           textAlign: TextAlign.center,
         ),
       ),
