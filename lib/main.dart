@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'home_page.dart';
 import 'about_page.dart';
+import 'social_web_page.dart'; // Import the social web page
 
 void main() {
   runApp(const MyApp());
@@ -27,8 +28,14 @@ class MyApp extends StatelessWidget {
         '/menu': (context) => const PlaceholderPage(title: 'Menu Page'),
         '/about': (context) => const AboutPage(),
         '/contact': (context) => const PlaceholderPage(title: 'Contact Page'),
-        '/twitter': (context) => const PlaceholderPage(title: 'Twitter/X page'),
-        '/facebook': (context) => const PlaceholderPage(title: 'Facebook page'),
+        '/twitter': (context) => const SocialWebPage(
+          title: 'Twitter/X page',
+          initialUrl: 'https://x.com',
+        ),
+        '/facebook': (context) => const SocialWebPage(
+          title: 'Facebook page',
+          initialUrl: 'https://facebook.com',
+        ),
       },
     );
   }
