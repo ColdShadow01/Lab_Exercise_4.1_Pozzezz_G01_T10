@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'home_page.dart';
+import 'menu_page.dart';
 import 'about_page.dart';
 
 void main() {
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const MyHomePage(title: 'Pozzezz'),
-        '/menu': (context) => const PlaceholderPage(title: 'Menu Page'),
+        '/menu': (context) => const MenuPage(),
         '/about': (context) => const AboutPage(),
         '/contact': (context) => const PlaceholderPage(title: 'Contact Page'),
         '/twitter': (context) => const PlaceholderPage(title: 'Twitter/X page'),
