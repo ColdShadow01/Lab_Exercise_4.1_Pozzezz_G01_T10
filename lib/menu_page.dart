@@ -16,64 +16,56 @@ class _MenuPageState extends State<MenuPage> {
       "price": "RM 21.90",
       "rating": "4.7",
       "reviews": "350 reviews",
-      "image":
-      "https://static.vecteezy.com/system/resources/previews/056/277/117/non_2x/delicious-pepperoni-pizza-with-melted-cheese-photo.jpg",
+      "image": "https://static.vecteezy.com/system/resources/previews/056/277/117/non_2x/delicious-pepperoni-pizza-with-melted-cheese-photo.jpg",
     },
     {
       "name": "Margherita Magic",
       "price": "RM 18.90",
       "rating": "4.1",
       "reviews": "50 reviews",
-      "image":
-      "https://tse4.mm.bing.net/th/id/OIP.lZ6nr5W7YLi0bvo9qBkC2QHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "image": "https://tse4.mm.bing.net/th/id/OIP.lZ6nr5W7YLi0bvo9qBkC2QHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
     },
     {
       "name": "BBQ Chicken Feast",
       "price": "RM 24.90",
       "rating": "5.0",
       "reviews": "35 reviews",
-      "image":
-      "https://www.jillianrecipes.com/wp-content/uploads/2025/11/mqvkxixagawjgbfvjpwf.webp",
+      "image": "https://www.jillianrecipes.com/wp-content/uploads/2025/11/mqvkxixagawjgbfvjpwf.webp",
     },
     {
       "name": "Garlic Pizza",
       "price": "RM 19.90",
       "rating": "4.0",
       "reviews": "30 reviews",
-      "image":
-      "https://tse1.mm.bing.net/th/id/OIP.SFJj4JL8pJc2UHCm-k14YwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "image": "https://tse1.mm.bing.net/th/id/OIP.SFJj4JL8pJc2UHCm-k14YwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
     },
     {
       "name": "Hawaiian Pizza",
       "price": "RM 20.90",
       "rating": "4.8",
       "reviews": "120 reviews",
-      "image":
-      "https://hips.hearstapps.com/hmg-prod/images/hawaiian-pizza-secondary-65f4641f046ed.jpg?crop=1xw:1xh;center",
+      "image": "https://hips.hearstapps.com/hmg-prod/images/hawaiian-pizza-secondary-65f4641f046ed.jpg?crop=1xw:1xh;center",
     },
     {
       "name": "Meat Lovers",
       "price": "RM 26.90",
       "rating": "4.9",
       "reviews": "98 reviews",
-      "image":
-      "https://chasety.com/wp-content/uploads/2024/05/realchasecurtis_Meat_Lovers_Pizza_with_bacon_ham_sausage_and_pe_c9071d5f-b231-4f4d-a7ec-e465238e66b4.png",
+      "image": "https://chasety.com/wp-content/uploads/2024/05/realchasecurtis_Meat_Lovers_Pizza_with_bacon_ham_sausage_and_pe_c9071d5f-b231-4f4d-a7ec-e465238e66b4.png",
     },
     {
       "name": "Cheese Burst",
       "price": "RM 22.90",
       "rating": "4.6",
       "reviews": "175 reviews",
-      "image":
-      "https://t3.ftcdn.net/jpg/09/62/14/10/360_F_962141033_hgSk2VzHhpYJ17BVix1TjwrxhsF4NGjP.jpg",
+      "image": "https://t3.ftcdn.net/jpg/09/62/14/10/360_F_962141033_hgSk2VzHhpYJ17BVix1TjwrxhsF4NGjP.jpg",
     },
     {
       "name": "Seafood Pizza",
       "price": "RM 28.90",
       "rating": "4.8",
       "reviews": "85 reviews",
-      "image":
-      "https://images.prismic.io/grbhouse/d7155b38-7efa-4230-b8d8-af92221c23db_HSE-AH-seafood-pizza-S.png?auto=compress%2Cformat&w=2000&q=75",
+      "image": "https://images.prismic.io/grbhouse/d7155b38-7efa-4230-b8d8-af92221c23db_HSE-AH-seafood-pizza-S.png?auto=compress%2Cformat&w=2000&q=75",
     },
   ];
 
@@ -85,10 +77,7 @@ class _MenuPageState extends State<MenuPage> {
         backgroundColor: const Color(0xFFE7A694),
         centerTitle: true,
         leading: IconButton(
-          icon: const Icon(
-            Icons.arrow_back,
-            color: Colors.black,
-          ),
+          icon: const Icon(Icons.arrow_back, color: Colors.black),
           onPressed: () {
             Navigator.pop(context);
           },
@@ -112,8 +101,7 @@ class _MenuPageState extends State<MenuPage> {
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
               itemCount: menuItems.length,
-              gridDelegate:
-              const SliverGridDelegateWithFixedCrossAxisCount(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
                 crossAxisSpacing: 12,
                 mainAxisSpacing: 12,
@@ -143,9 +131,7 @@ class _MenuPageState extends State<MenuPage> {
                   Navigator.pop(context);
                 },
                 style: OutlinedButton.styleFrom(
-                  side: const BorderSide(
-                    color: Color(0xFF9A7566),
-                  ),
+                  side: const BorderSide(color: Color(0xFF9A7566)),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30),
                   ),
@@ -242,10 +228,7 @@ class _MenuPageState extends State<MenuPage> {
               name,
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
-              style: const TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.bold,
-              ),
+              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
             ),
           ),
 
@@ -253,18 +236,11 @@ class _MenuPageState extends State<MenuPage> {
             padding: const EdgeInsets.symmetric(horizontal: 10),
             child: Row(
               children: [
-                const Icon(
-                  Icons.star,
-                  color: Colors.amber,
-                  size: 14,
-                ),
+                const Icon(Icons.star, color: Colors.amber, size: 14),
                 const SizedBox(width: 4),
                 Text(
                   '$rating ($reviews)',
-                  style: const TextStyle(
-                    fontSize: 11,
-                    color: Colors.grey,
-                  ),
+                  style: const TextStyle(fontSize: 11, color: Colors.grey),
                 ),
               ],
             ),
@@ -275,8 +251,7 @@ class _MenuPageState extends State<MenuPage> {
           Padding(
             padding: const EdgeInsets.all(10),
             child: Row(
-              mainAxisAlignment:
-              MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(
                   padding: const EdgeInsets.symmetric(
@@ -296,11 +271,7 @@ class _MenuPageState extends State<MenuPage> {
                   ),
                 ),
 
-                const Icon(
-                  Icons.open_in_new,
-                  color: Colors.grey,
-                  size: 22,
-                ),
+                const Icon(Icons.open_in_new, color: Colors.grey, size: 22),
               ],
             ),
           ),
