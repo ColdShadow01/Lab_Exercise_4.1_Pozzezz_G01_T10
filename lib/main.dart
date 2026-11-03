@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'home_page.dart';
 import 'menu_page.dart';
 import 'about_page.dart';
+import 'contact_page.dart';
 import 'social_web_page.dart'; // Import the social web page
 
 void main() {
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => const MyHomePage(title: 'Pozzezz'),
         '/menu': (context) => const MenuPage(),
         '/about': (context) => const AboutPage(),
-        '/contact': (context) => const PlaceholderPage(title: 'Contact Page'),
+        '/contact': (context) => const ContactPage(),
         '/twitter': (context) => const SocialWebPage(
           title: 'Twitter/X page',
           initialUrl: 'https://x.com',
